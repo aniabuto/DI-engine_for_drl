@@ -6,8 +6,8 @@ mario_qrdqn_config = dict(
         collector_env_num=8,
         evaluator_env_num=8,
         n_evaluator_episode=8,
-        stop_value=100000,
-        replay_path='mario_dqn_seed0/video',
+        stop_value=1000,
+        replay_path='mario_qrdqn_seed0/video',
     ),
     policy=dict(
         cuda=True,

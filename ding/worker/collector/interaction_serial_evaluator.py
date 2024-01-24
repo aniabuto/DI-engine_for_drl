@@ -187,7 +187,7 @@ class InteractionSerialEvaluator(ISerialEvaluator):
             train_iter: int = -1,
             envstep: int = -1,
             n_episode: Optional[int] = None,
-            force_render: bool = False,
+            force_render: bool = True,
             policy_kwargs: Optional[Dict] = {},
     ) -> Tuple[bool, Dict[str, List]]:
         '''
