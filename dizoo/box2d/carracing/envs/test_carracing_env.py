@@ -5,7 +5,9 @@ from carracing_env import CarRacingEnv
 
 
 @pytest.mark.envtest
-@pytest.mark.parametrize('cfg', [EasyDict({'env_id': 'CarRacing-v2', 'continuous': False, 'act_scale': False})])
+@pytest.mark.parametrize('cfg', [EasyDict({'env_id': 'CarRacing-v2', 'continuous': False, 'act_scale': False,
+                                           'replay_path': None, 'save_replay_gif': False,
+                                           'replay_path_gif': None, 'action_clip': False})])
 class TestCarRacing:
 
     def test_naive(self, cfg):
