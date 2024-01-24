@@ -1,7 +1,7 @@
 import pytest
 import numpy as np
 from easydict import EasyDict
-from carracing_env import CarRacingEnv
+from dizoo.box2d.carracing.envs.carracing_env import CarRacingEnv
 
 
 # @pytest.mark.envtest
@@ -48,7 +48,7 @@ from ding.envs import BaseEnvManagerV2, DingEnvWrapper
 from ding.framework import ding_init, task
 from ding.framework.context import OnlineRLContext
 from ding.rl_utils import get_epsilon_greedy_fn
-from dizoo.box2d.carracing.config.carracing_qrdqn_config import main_config
+from dizoo.box2d.carracing.config.carracing_qrdqn_config import main_config, create_config
 from ding.framework.middleware import CkptSaver, OffPolicyLearner, StepCollector, data_pusher, eps_greedy_handler, \
     interaction_evaluator, online_logger
 from ditk import logging

@@ -1,7 +1,7 @@
 import pytest
 import numpy as np
 from easydict import EasyDict
-from carracing_env import CarRacingEnv
+from dizoo.box2d.carracing.envs.carracing_env import CarRacingEnv
 
 
 @pytest.mark.envtest

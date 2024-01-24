@@ -1,6 +1,6 @@
 from easydict import EasyDict
 
-nstep = 3
+nstep = 1
 carracing_qrdqn_config = dict(
     exp_name='carracing_qrdqn_seed0',
     env=dict(
@@ -9,7 +9,7 @@ carracing_qrdqn_config = dict(
         env_id='CarRacing-v2',
         continuous=False,
         n_evaluator_episode=8,
-        stop_value=900,
+        stop_value=-56,
         replay_path='./carracing_qrdqn_seed0/video',
     ),
     policy=dict(
@@ -19,8 +19,8 @@ carracing_qrdqn_config = dict(
             obs_shape=[3, 96, 96],
             action_shape=5,
             encoder_hidden_size_list=[64, 64, 128],
-            dueling=True,
-            num_quantiles=64,
+            # dueling=True,
+            # num_quantiles=64,
         ),
         discount_factor=0.99,
         nstep=nstep,

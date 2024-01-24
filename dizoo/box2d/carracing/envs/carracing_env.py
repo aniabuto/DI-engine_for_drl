@@ -38,6 +38,7 @@ class CarRacingEnv(BaseEnv):
         self._replay_path_gif = cfg.replay_path_gif
         self._save_replay_gif = cfg.save_replay_gif
         self._save_replay_count = 0
+        self._env = None
         if cfg.continuous:
             self._act_scale = cfg.act_scale  # act_scale only works in continuous env
             self._action_clip = cfg.action_clip
